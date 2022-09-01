@@ -6,7 +6,7 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/assets/images/aqing.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
     ],
-    base: '/note/',
+    // base: '/',
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
@@ -21,18 +21,12 @@ module.exports = {
                 '/guide/',
                 {
                     title: '指导',
-                    children: [
-                        '/guide/README',
-                    ]
                 }
             ],
             '/cs/': [
                 '/cs/',
                 {
                     title: '计算机网络',
-                    children: [
-                        '/cs/计算机网络',
-                    ]
                 }
             ],
         },
@@ -52,13 +46,13 @@ module.exports = {
             '@vssue/vuepress-plugin-vssue',
             {
                 // 设置 `platform` 而不是 `api`
-                platform: 'github',
+                platform: 'github-v4',
 
                 // 其他的 Vssue 配置
-                owner: 'OWNER_OF_REPO',
-                repo: 'NAME_OF_REPO',
-                clientId: 'YOUR_CLIENT_ID',
-                clientSecret: 'YOUR_CLIENT_SECRET',
+                owner: 'lovehexiechuangxin',
+                repo: 'note',
+                clientId: 'dce1d881a027f6cd66e4',
+                clientSecret: '509deeb35e34ebba5e999a3bc56a388ebf24c564',
             },
         ],
     ],
