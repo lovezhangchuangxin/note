@@ -1,3 +1,3 @@
-# 引导
+# 笔记引导
 
-<Vssue :options="{ locale: 'zh'}"/>
+<Vssue />

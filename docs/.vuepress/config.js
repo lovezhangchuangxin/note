@@ -1,5 +1,7 @@
 const moment = require('moment');
 
+const { clientId, clientSecret } = require('../../secret.js');
+
 module.exports = {
     title: 'keqing的笔记',
     description: 'study notes',
@@ -14,7 +16,7 @@ module.exports = {
         logo: '/assets/images/aqing.png',
         nav: [
             { text: '引导', link: '/guide/' },
-            { text: '计算机', link: '/cs/' },
+            { text: '前端', link: '/web/' },
         ],
         sidebar: {
             '/guide/': [
@@ -23,10 +25,11 @@ module.exports = {
                     title: '指导',
                 }
             ],
-            '/cs/': [
-                '/cs/',
+            '/web/': [
+                '/web/',
                 {
-                    title: '计算机网络',
+                    title: '学习Ajax',
+                    path: '学习Ajax'
                 }
             ],
         },
@@ -46,13 +49,14 @@ module.exports = {
             '@vssue/vuepress-plugin-vssue',
             {
                 // 设置 `platform` 而不是 `api`
-                platform: 'github-v4',
-
+                platform: 'github',
                 // 其他的 Vssue 配置
                 owner: 'lovehexiechuangxin',
                 repo: 'note',
-                clientId: 'dce1d881a027f6cd66e4',
-                clientSecret: '509deeb35e34ebba5e999a3bc56a388ebf24c564',
+                clientId: clientId,
+                clientSecret: clientSecret,
+                autoCreateIssue: true,
+                locale: 'zh'
             },
         ],
     ],

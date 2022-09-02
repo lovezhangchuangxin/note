@@ -1,6 +1,12 @@
 # vuepress temp file
 .temp
 
+# secret
+secret.js
+
+# test
+test.js
+
 # Logs
 logs
 *.log
