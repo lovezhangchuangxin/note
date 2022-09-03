@@ -16,7 +16,13 @@ module.exports = {
         logo: '/assets/images/aqing.png',
         nav: [
             { text: '引导', link: '/guide/' },
-            { text: '前端', link: '/web/' },
+            {
+                text: '前端',
+                link: '/web/',
+                items: [
+                    { text: 'CSS', link: '/web/CSS/' },
+                ]
+            },
         ],
         sidebar: {
             '/guide/': [
@@ -30,10 +36,28 @@ module.exports = {
                 {
                     title: '学习Ajax',
                     path: '学习Ajax'
+                },
+                {
+                    title: 'Bootstrap学习',
+                    path: 'Bootstrap学习'
+                },
+                {
+                    title: 'CSS',
+                    path: '/web/CSS/',
+                    children: [
+                        {
+                            title: 'rem适配布局方案',
+                            path: '/web/CSS/rem适配布局方案'
+                        },
+                    ]
                 }
             ],
+            '/CSS/': [
+
+            ]
         },
         lastUpdated: '更新时间',
+        sidebarDepth: 3
     },
     plugins: [
         [
@@ -51,7 +75,7 @@ module.exports = {
                 // 设置 `platform` 而不是 `api`
                 platform: 'github',
                 // 其他的 Vssue 配置
-                owner: 'lovehexiechuangxin',
+                owner: 'lovezhangchuangxin',
                 repo: 'note',
                 clientId: clientId,
                 clientSecret: clientSecret,

@@ -9,7 +9,7 @@
 
 :::
 
-## 原理
+## 1. 原理
 
 在客户端（如浏览器）和服务器之间加了一个中间层：Ajax 引擎。由 Ajax 引擎独立向服务器请求数据，前端获取到 Ajax 返回的数据后，可以使用新数据来更新页面、或进行其它操作，使用户请求和服务器响应异步化，从而保证了在不刷新页面的前提下可以局部更新网页内容。
 
@@ -19,7 +19,7 @@
 
 我暂时也不是很理解，不过不影响下面的使用:smile:
 
-## XML
+## 2. XML
 
 我们注意到前面说过 Ajax = 异步的 Javascript 和 XML，那么什么是 XML 呢？
 
@@ -53,12 +53,12 @@ XML 指可扩展标记语言（eXtensible Markup Language）
 
 简单地来说，使用 Ajax 就是我们通过 Javascript 向服务端发起 http 请求，服务端处理我们的请求并响应，响应的数据以 JSON 格式（也可以是字符串等其他格式）返回，我们再将返回的数据更新到我们的页面。
 
-## HTTP
+## 3. HTTP
 
 使用 Ajax 之前我们必须什么是 HTTP 协议，如果你还不知道 HTTP 请求方式，HTTP 状态码，请自行上网搜索学习。
 如果你想深入了解，这里有 HTTP 的[中文 MDN 文档](https://developer.mozilla.org/zh-CN/docs/Web/HTTP)
 
-## Ajax 的使用
+## 4. Ajax 的使用
 
 使用之前我们要知道，Ajax 用于客户端向服务端请求数据并实现页面的更新，为了测试我们写的 Ajax 代码，我们可能需要搭建一个服务端，比如使用[express](https://www.expressjs.com.cn/)来搭建，但是这样有些麻烦，这里我们使用[Swagger 开放接口](https://api.apiopen.top/swagger/index.html#/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3/)，我们向这些接口发送请求即可得到响应的结果
 
@@ -174,7 +174,7 @@ xhr.onreadystatechange = function () {
 
 以上是 Ajax 的基本使用
 
-## Ajax 使用补充
+## 5. Ajax 使用补充
 
 1. **open 方法**
 
@@ -217,7 +217,7 @@ xhr.send("username=123&password=123456");
 4. **设置请求头**
 
 ```js
-/ 设置请求体内容的类型
+// 设置请求体内容的类型
 xhr.setRequesHeader('Content-Type','application/x-www-from-urlencoded');
 // 自定义头信息
 xhr.setRequesHeader('name', 'ykyk');
