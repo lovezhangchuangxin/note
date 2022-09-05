@@ -21,6 +21,7 @@ module.exports = {
                 link: '/web/',
                 items: [
                     { text: 'CSS', link: '/web/CSS/' },
+                    { text: 'Javascript', link: '/web/JS/' },
                 ]
             },
         ],
@@ -34,20 +35,34 @@ module.exports = {
             '/web/': [
                 '/web/',
                 {
-                    title: '学习Ajax',
-                    path: '学习Ajax'
-                },
-                {
-                    title: 'Bootstrap学习',
-                    path: 'Bootstrap学习'
-                },
-                {
                     title: 'CSS',
                     path: '/web/CSS/',
                     children: [
                         {
                             title: 'rem适配布局方案',
                             path: '/web/CSS/rem适配布局方案'
+                        },
+                        {
+                            title: 'Bootstrap学习',
+                            path: '/web/CSS/Bootstrap学习'
+                        },
+                    ]
+                },
+                {
+                    title: 'JavaScript',
+                    path: '/web/JS/',
+                    children: [
+                        {
+                            title: 'this理解',
+                            path: '/web/JS/this理解'
+                        },
+                        {
+                            title: '改变this指向',
+                            path: '/web/JS/改变this指向'
+                        },
+                        {
+                            title: '学习Ajax',
+                            path: '/web/JS/学习Ajax'
                         },
                     ]
                 }

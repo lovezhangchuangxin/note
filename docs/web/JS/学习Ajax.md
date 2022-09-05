@@ -218,9 +218,9 @@ xhr.send("username=123&password=123456");
 
 ```js
 // 设置请求体内容的类型
-xhr.setRequesHeader('Content-Type','application/x-www-from-urlencoded');
+xhr.setRequestHeader('Content-Type','application/x-www-from-urlencoded');
 // 自定义头信息
-xhr.setRequesHeader('name', 'ykyk');
+xhr.setRequestHeader('name', 'ykyk');
 ```
 
 5. **请求超时和网络异常**
