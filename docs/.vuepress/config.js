@@ -61,6 +61,10 @@ module.exports = {
                             path: '/web/JS/改变this指向'
                         },
                         {
+                            title: 'Polyfill和转译器',
+                            path: '/web/JS/Polyfill和转译器'
+                        },
+                        {
                             title: '学习Ajax',
                             path: '/web/JS/学习Ajax'
                         },

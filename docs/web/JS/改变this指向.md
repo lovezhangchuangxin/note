@@ -78,3 +78,5 @@ Function.prototype.bind = function (context) {
   };
 };
 ```
+
+<Vssue />

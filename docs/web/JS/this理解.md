@@ -134,3 +134,5 @@ let role = {
 
 new Keqing().sayHi.apply(role); // Hello 甘雨
 ```
+
+<Vssue />
