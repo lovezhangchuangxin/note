@@ -24,6 +24,13 @@ module.exports = {
                     { text: 'Javascript', link: '/web/JS/' },
                 ]
             },
+            {
+                text: 'HUST',
+                link: '/hust/',
+                items: [
+                    { text: 'network', link: '/hust/network/' },
+                ]
+            },
         ],
         sidebar: {
             '/guide/': [
@@ -71,9 +78,19 @@ module.exports = {
                     ]
                 }
             ],
-            '/CSS/': [
-
-            ]
+            '/hust/': [
+                '/hust/',
+                {
+                    title: 'network',
+                    path: '/hust/network/',
+                    children: [
+                        {
+                            title: '计网习题',
+                            path: '/hust/network/计网习题'
+                        }
+                    ]
+                }
+            ],
         },
         lastUpdated: '更新时间',
         sidebarDepth: 3

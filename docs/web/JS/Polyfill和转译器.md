@@ -70,3 +70,5 @@ Math.trunc(n) 是一个“截断”数字小数部分的函数，例如 Math.tru
 
 Transpilers 和 polyfill 有区别，前者将现代的语法和运算符转换为旧环境所支持的版本，后者是补充或者更新现代的函数。
 Babel 中同时实现了 Transpilers 和 polyfill
+
+<Vssue />
