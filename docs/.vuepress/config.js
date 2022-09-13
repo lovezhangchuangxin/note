@@ -87,6 +87,10 @@ module.exports = {
                         {
                             title: '计网习题',
                             path: '/hust/network/计网习题'
+                        },
+                        {
+                            title: '华科抢课',
+                            path: '/hust/network/华科抢课'
                         }
                     ]
                 }
