@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git 基本使用 | keqing的笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/assets/images/aqing.ico">
+    <meta name="description" content="study notes">
+    
+    <link rel="preload" href="/assets/css/0.styles.bd54a832.css" as="style"><link rel="preload" href="/assets/js/app.388e8b9b.js" as="script"><link rel="preload" href="/assets/js/2.0e0c6dfe.js" as="script"><link rel="preload" href="/assets/js/17.8114bc4a.js" as="script"><link rel="prefetch" href="/assets/js/10.b70e4572.js"><link rel="prefetch" href="/assets/js/11.6eabacae.js"><link rel="prefetch" href="/assets/js/12.0c30d09b.js"><link rel="prefetch" href="/assets/js/13.73880b75.js"><link rel="prefetch" href="/assets/js/14.b810035e.js"><link rel="prefetch" href="/assets/js/15.c4b0bfec.js"><link rel="prefetch" href="/assets/js/16.b884542e.js"><link rel="prefetch" href="/assets/js/18.68a92e69.js"><link rel="prefetch" href="/assets/js/19.ba9051dc.js"><link rel="prefetch" href="/assets/js/20.45d76f45.js"><link rel="prefetch" href="/assets/js/21.0a0bc75d.js"><link rel="prefetch" href="/assets/js/22.0a704e63.js"><link rel="prefetch" href="/assets/js/23.1f5c133a.js"><link rel="prefetch" href="/assets/js/24.8fe89294.js"><link rel="prefetch" href="/assets/js/25.050a0cb9.js"><link rel="prefetch" href="/assets/js/26.5528b268.js"><link rel="prefetch" href="/assets/js/27.8e830639.js"><link rel="prefetch" href="/assets/js/28.8ab3042c.js"><link rel="prefetch" href="/assets/js/29.f24a270d.js"><link rel="prefetch" href="/assets/js/3.d9067db4.js"><link rel="prefetch" href="/assets/js/30.8b079fe7.js"><link rel="prefetch" href="/assets/js/4.2557b634.js"><link rel="prefetch" href="/assets/js/5.89fe225c.js"><link rel="prefetch" href="/assets/js/6.497c19f1.js"><link rel="prefetch" href="/assets/js/7.5dd6fcb5.js"><link rel="prefetch" href="/assets/js/8.a02f3650.js"><link rel="prefetch" href="/assets/js/9.522e0447.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bd54a832.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/images/aqing.png" alt="keqing的笔记" class="logo"> <span class="site-name can-hide">keqing的笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  引导
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/JS/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/web/Git/" class="nav-link router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/NodeJs/" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/web/React/" class="nav-link">
+  React
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HUST" class="dropdown-title"><span class="title">HUST</span> <span class="arrow down"></span></button> <button type="button" aria-label="HUST" class="mobile-dropdown-title"><span class="title">HUST</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/hust/network/" class="nav-link">
+  network
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  引导
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/web/JS/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/web/Git/" class="nav-link router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/web/NodeJs/" class="nav-link">
+  NodeJs
+</a></li><li class="dropdown-item"><!----> <a href="/web/React/" class="nav-link">
+  React
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HUST" class="dropdown-title"><span class="title">HUST</span> <span class="arrow down"></span></button> <button type="button" aria-label="HUST" class="mobile-dropdown-title"><span class="title">HUST</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/hust/network/" class="nav-link">
+  network
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/web/" aria-current="page" class="sidebar-link">web 前端相关知识</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/web/CSS/" class="sidebar-heading clickable"><span>CSS</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/web/JS/" class="sidebar-heading clickable"><span>JavaScript</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/web/Git/" class="sidebar-heading clickable router-link-active open"><span>Git</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/Git/Git基本使用.html" class="active sidebar-link">Git基本使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/Git/Git基本使用.html#一-配置" class="sidebar-link">一.配置</a></li><li class="sidebar-sub-header"><a href="/web/Git/Git基本使用.html#基本命令" class="sidebar-link">基本命令</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/web/NodeJs/" class="sidebar-heading clickable"><span>NodeJs</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/web/React/" class="sidebar-heading clickable"><span>React</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-基本使用"><a href="#git-基本使用" class="header-anchor">#</a> Git 基本使用</h1> <p>Git 下载不必多说，在<a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">https://git-scm.com/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>下载安装即可。</p> <h2 id="一-配置"><a href="#一-配置" class="header-anchor">#</a> 一.配置</h2> <ol><li>全局配置用户名和邮箱</li></ol> <div class="language-git line-numbers-mode"><pre class="language-git"><code>git config --global user.name <span class="token string">&quot;zhangchuangxin&quot;</span>
+git config --global user.email <span class="token string">&quot;2911331070@qq.com&quot;</span>
+<span class="token comment"># 查看配置</span>
+git config --list
+<span class="token comment"># 可以直接查看某个配置项</span>
+git config user.name
+git config user.email
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>查看全局配置文件</p> <div class="language-git line-numbers-mode"><pre class="language-git"><code>vim ~/.gitconfig
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>本地配置用户名和邮箱</li></ol> <p>执行 <code>git init</code> 命令后会初始化 git 仓库，这表示 git 开始管理你的项目。
+此时当前目录下会出现一个隐藏文件夹.git。.git 文件夹下的 config 文件则是项目的本地配置。</p> <div class="language-git line-numbers-mode"><pre class="language-git"><code><span class="token comment"># 类似全局配置，不要--global即可</span>
+git config user.name <span class="token string">&quot;zhangchuangxin&quot;</span>
+git config user.email <span class="token string">&quot;2911331070@qq.com&quot;</span>
+<span class="token comment"># 查看本地配置</span>
+vim .git/config
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>vim 的知识在次不多说，简要介绍一下怎么退出（初次使用 vim 时可能会遇到不会退出的尴尬）
+输入:q 或者 ZZ 即可退出</p> <p>如果你电脑中配置了 vscode 的环境变量，使用 code .git/config 同样可以打开项目的本地配置文件</p> <ol start="3"><li>更改 Git 默认使用的文本编辑器</li></ol> <p>Git 默认使用的文本编辑器一般可能会是 Vi 或者 Vim，你也可以更改为自己喜欢的编辑器</p> <div class="language-git line-numbers-mode"><pre class="language-git"><code>git config --global core.editor code
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="4"><li>差异分析工具</li></ol> <p>还有一个比较常用的是，在解决合并冲突时使用哪种差异分析工具。比如要改用 vimdiff 的话</p> <div class="language-git line-numbers-mode"><pre class="language-git"><code>git config --global merge.tool vimdiff
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>git 命令行窗口中内容太多想清理怎么办？输入 clear 命令或者使用快捷键 ctrl + l</p></div> <h2 id="基本命令"><a href="#基本命令" class="header-anchor">#</a> 基本命令</h2> <ul><li>git --version 查看 git 版本</li> <li>git status 查看当前状态</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/JS/学习Ajax.html" class="prev">
+        学习Ajax
+      </a></span> <span class="next"><a href="/web/NodeJs/npm学习.html">
+        npm学习
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.388e8b9b.js" defer></script><script src="/assets/js/2.0e0c6dfe.js" defer></script><script src="/assets/js/17.8114bc4a.js" defer></script>
+  </body>
+</html>
